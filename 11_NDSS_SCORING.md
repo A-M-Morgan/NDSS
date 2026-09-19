@@ -1,294 +1,184 @@
 # NDSS Scoring Framework
 
-## Purpose
+Calculate the scores automatically after completing each evaluation.
 
-This document defines the official NDSS scoring methodology used to convert evaluation findings into an overall quality outcome.
+## Rating Scale
 
-This scoring framework must only be applied after the evaluator has completed the NDSS assessment using evidence-based evaluation principles.
+- **2** = Fully Met
+- **1** = Partially Met / Opportunity Exists
+- **0** = Improvement Required
+- **N/A** = Not Applicable
 
----
+## Criterion Weights
 
-# Scoring Scale
+EARNT Score
 
-## Rating Values
 
-| Rating | Meaning |
-|----------|----------|
-| 2 | Fully Met |
-| 1 | Partially Met / Opportunity Exists |
-| 0 | Improvement Required |
-| N/A | Not Applicable |
 
----
-
-# THE HUMAN [UNDERSTANDING]
-
-Maximum Score: 20
-
-## Opening
-
-Weighting: 15%
-
-Available Ratings:
-- 0
-- 1
-- 2
-
-## Empathy
-
-Weighting: 30%
-
-Available Ratings:
-- 0
-- 1
-- 2
-
-## Customer Recognition
-
-Weighting: 10%
-
-Available Ratings:
-- N/A
-- 0
-- 1
-- 2
-
-## Active Listening
-
-Weighting: 15%
-
-Available Ratings:
-- 0
-- 1
-- 2
-
-## Efficient Messaging & Writing Style
-
-Weighting: 15%
-
-Available Ratings:
-- 0
-- 1
-- 2
-
-## Closing
-
-Weighting: 15%
-
-Available Ratings:
-- 0
-- 1
-- 2
-
----
-
-# THE FOUNDATION [KNOWLEDGEABLE]
-
-Maximum Score: 15
-
-## Relevant Information
-
-Weighting: 33.33%
-
-Available Ratings:
-- 0
-- 1
-- 2
-
-## Completeness
-
-Weighting: 26.67%
-
-Available Ratings:
-- N/A
-- 0
-- 1
-- 2
-
-## Transfer Process
-
-Weighting: 13.33%
-
-Available Ratings:
-- N/A
-- 0
-- 1
-- 2
-
-## Reasoning / Ownership
-
-Weighting: 26.67%
-
-Available Ratings:
-- N/A
-- 0
-- 1
-- 2
-
----
-
-# SUPPORTING EMIRATES [COLLABORATIVE / RESOURCEFUL]
-
-Maximum Score: 15
-
-## Promoting Emirates Features
-
-Weighting: 46.67%
-
-Available Ratings:
-- N/A
-- 0
-- 1
-- 2
-
-## Strategic Sales Opportunities
-
-Weighting: 53.33%
-
-Available Ratings:
-- N/A
-- 0
-- 1
-- 2
-
----
-
-# BRAND BREAKERS [NON-NEGOTIABLES]
-
-Brand Breakers are binary assessments.
-
-## Compliance
-
-Values:
-- YES
-- NO
-
-## Behaviour / Attitude
-
-Values:
-- YES
-- NO
-
-## System Usage
-
-Values:
-- YES
-- NO
-
----
-
-# Overall Quality Score
-
-Maximum Score = 50
-
-The final score is calculated from:
-
-Human Score (20)
+If(
+ Compliance   "No" ||
+ Behaviour = "No" ||
+ System Usage = "No",
+ 0,
+If(
+    Opening = "N/A",
+    0,
+    Value(Opening) * 3
+)
 +
-Foundation Score (15)
+If(
+    Empathy = "N/A",
+    0,
+    Value(Empathy) * 6
+)
 +
-Supporting Emirates Score (15)
+If(
+    Customer Recognition = "N/A",
+    0,
+    Value(Customer Recognition) * 2
+)
++
+If(
+    Active Listening = "N/A",
+    0,
+    Value(Active Listening) * 3
+)
++
+If(
+    Efficient Messaging & Writing Style = "N/A",
+    0,
+    Value(Efficient Messaging & Writing Style) * 3
+)
++
+If(
+    Closing = "N/A",
+    0,
+    Value(Closing) * 3
+)
++
+If(
+    Relevant Information = "N/A",
+    0,
+    Value(Relevant Information) * 5
+)
++
+If(
+    Completeness = "N/A",
+    0,
+    Value(Completeness) * 4
+)
++
+If(
+    Transfer Process = "N/A",
+    0,
+    Value(Transfer Process) * 2
+)
++
+If(
+    Reasoning / Ownership = "N/A",
+    0,
+    Value(Reasoning / Ownership) * 4
+)
++
+If(
+    Promoting Emirates Features = "N/A",
+    0,
+    Value(Promoting Emirates Features) * 7
+)
++
+If(
+    Strategic Sales Opportunities = "N/A",
+    0,
+    Value(Strategic Sales Opportunities) * 8
+))
 
-Maximum Total = 50
 
----
+Applicable MAX Score
 
-# Quality Outcome Bands
 
-## Thriving
 
-Score Range:
-0.90 - 1.00
+If(Opening<>"N/A",6,0)+
+If(Empathy<>"N/A",12,0)+
+If(Customer Recognition<>"N/A",4,0)+
+If(Active Listening<>"N/A",6,0)+
+If(Efficient Messaging & Writing Style<>"N/A",6,0)+
+If(Closing<>"N/A",6,0)+
+If(Relevant Information<>"N/A",10,0)+
+If(Completeness<>"N/A",8,0)+
+If(Transfer Process<>"N/A",4,0)+
+If(Reasoning / Ownership<>"N/A",8,0)+
+If(Promoting Emirates Features<>"N/A",14,0)+
+If(Strategic Sales Opportunities<>"N/A",16,0)
 
-Outcome:
-Thriving
 
----
 
-## Healthy
 
-Score Range:
-0.75 - 0.89
+Score %
 
-Outcome:
-Healthy
 
----
 
-## Getting There
+Round(
+    (
+        Value(EarntScore_DataCard1.Update) /
+        (
+            If(Opening<>"N/A",6,0)+
+            If(Empathy<>"N/A",12,0)+
+            If(Customer Recognition<>"N/A",4,0)+
+            If(Active Listening<>"N/A",6,0)+
+            If(Efficient Messaging & Writing Style<>"N/A",6,0)+
+            If(Closing<>"N/A",6,0)+
+            If(Relevant Information<>"N/A",10,0)+
+            If(Completeness<>"N/A",8,0)+
+            If(Transfer Process<>"N/A",4,0)+
+            If(Reasoning / Ownership<>"N/A",8,0)+
+            If(Promoting Emirates Features<>"N/A",14,0)+
+            If(Strategic Sales Opportunities<>"N/A",16,0)
+        )
+    ) * 100,
+    0
+)
 
-Score Range:
-0.60 - 0.74
 
-Outcome:
-Getting There
+Healthy Range
 
----
 
-## Critical
 
-Score Range:
-0.00 - 0.59
 
-Outcome:
-Critical
-
----
-
-# Brand Breaker Override Rule
-
-If any confirmed Brand Breaker is identified:
-
-- The Brand Breaker must be reported regardless of score.
-- The evaluator must clearly identify:
-  - Category
-  - Criterion
-  - Evidence
-  - Reason
-
-The score must not override a confirmed Brand Breaker finding.
-
----
-
-# Scoring Rules
-
-1. Assess applicability before scoring.
-2. Do not score Not Applicable criteria as zero.
-3. Exclude N/A criteria from scoring calculations.
-4. Do not award points without evidence.
-5. Do not infer Brand Breakers.
-6. Use "Insufficient Evidence / System Validation Required" where validation is not possible.
-7. Complete the NDSS evaluation before calculating the final score.
-
----
-
-# Evaluation Output Addition
-
-Include:
-
-## I. NDSS Scorecard
-
-The Human Score:
-X / 20
-
-The Foundation Score:
-X / 15
-
-Supporting Emirates Score:
-X / 15
-
-Overall Score:
-X / 50
-
-Score Percentage:
-X%
-
-Quality Outcome:
-- Thriving
-- Healthy
-- Getting There
-- Critical
-
-Brand Breaker:
-YES / NO / REQUIRES SYSTEM VALIDATION
-``
+With(
+{
+    ScorePct:
+    Round(
+        (
+            Value(EarntScore_DataCard1.Update) /
+            (
+                If(Opening<>"N/A",6,0)+
+                If(Empathy<>"N/A",12,0)+
+                If(Customer Recognition<>"N/A",4,0)+
+                If(Active Listening<>"N/A",6,0)+
+                If(Efficient Messaging & Writing Style<>"N/A",6,0)+
+                If(Closing<>"N/A",6,0)+
+                If(Relevant Information<>"N/A",10,0)+
+                If(Completeness<>"N/A",8,0)+
+                If(Transfer Process<>"N/A",4,0)+
+                If(Reasoning / Ownership<>"N/A",8,0)+
+                If(Promoting Emirates Features<>"N/A",14,0)+
+                If(Strategic Sales Opportunities<>"N/A",16,0)
+            )
+        ) * 100,
+        2
+    )
+},
+If(
+    ScorePct >= 90,
+    "Thriving",
+    If(
+        ScorePct >= 75,
+        "Healthy",
+        If(
+            ScorePct >= 60,
+            "Getting There",
+            "Critical"
+        )
+    )
+)
+)
