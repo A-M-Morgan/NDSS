@@ -6,7 +6,7 @@ description: >
   brand breakers, Emirates features, strategic sales opportunities,
   mandatory statements, and quality outcomes.
 author: Ahmed Morgan
-version: 1.0
+version: 1.1
 category: Knowledge Base
 last_updated: 2026-09-21
 ---
@@ -301,6 +301,22 @@ Verification cannot be validated.
 
 ---
 
+## Regulatory Compliance
+
+### Evaluate Whether:
+
+- Regulatory obligations were followed.
+- Mandatory compliance requirements were met.
+
+### Outcomes
+
+- Compliant
+- Brand Breaker
+- Not Applicable
+- Insufficient Evidence
+
+---
+
 ## Behaviour & Attitude
 
 ### Evaluate Whether:
@@ -481,5 +497,58 @@ Reference interaction types:
 Use these examples to maintain scoring consistency across evaluations.
 
 ---
+
+# NDSS Scoring Framework
+
+Calculate the scores automatically after completing each evaluation.
+
+## Rating Scale
+
+- **2** = Fully Met
+- **1** = Partially Met / Opportunity Exists
+- **0** = Improvement Required
+- **N/A** = Not Applicable
+
+## Criterion Weights
+
+| Criterion | Weight | Maximum Points |
+|---|---:|---:|
+| Opening | 3 | 6 |
+| Empathy | 6 | 12 |
+| Customer Recognition | 2 | 4 |
+| Active Listening | 3 | 6 |
+| Efficient Messaging & Writing Style | 3 | 6 |
+| Closing | 3 | 6 |
+| Relevant Information | 5 | 10 |
+| Completeness | 4 | 8 |
+| Transfer Process | 2 | 4 |
+| Reasoning / Ownership | 4 | 8 |
+| Promoting Emirates Features | 7 | 14 |
+| Strategic Sales Opportunities | 8 | 16 |
+
+## Calculation Instructions
+
+1. Rate each criterion as **2**, **1**, **0**, or **N/A**.
+2. For each criterion that is not **N/A**, calculate its earned points as: **rating × weight**.
+3. Add all earned points to calculate the **Earnt Score**.
+4. If **Compliance**, **Behaviour / Attitude**, or **System Usage** is rated **No**, override the total and set the **Earnt Score to 0**.
+5. Calculate the **Applicable Max Score** by adding the maximum points only for criteria that are not **N/A**. Exclude N/A criteria completely.
+6. Calculate **Score % = Earnt Score ÷ Applicable Max Score × 100** and round the displayed percentage to the nearest whole number.
+7. For the performance range, use the unrounded percentage rounded to two decimal places:
+   - **Thriving:** 90.00% or higher
+   - **Healthy:** 75.00% to 89.99%
+   - **Getting There:** 60.00% to 74.99%
+   - **Critical:** below 60.00%
+8. If the Applicable Max Score is 0, report that the score cannot be calculated instead of dividing by zero.
+
+## Required Score Output
+
+Use this exact format in every evaluation:
+
+**Earnt Score =** [earned points]
+**Applicable Max Score =** [applicable maximum points]
+**Score % =** [whole-number percentage]%
+**Healthy Range =** [Thriving, Healthy, Getting There, or Critical]
+
 
 # End of Document
