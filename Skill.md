@@ -301,22 +301,6 @@ Verification cannot be validated.
 
 ---
 
-## Regulatory Compliance
-
-### Evaluate Whether:
-
-- Regulatory obligations were followed.
-- Mandatory compliance requirements were met.
-
-### Outcomes
-
-- Compliant
-- Brand Breaker
-- Not Applicable
-- Insufficient Evidence
-
----
-
 ## Behaviour & Attitude
 
 ### Evaluate Whether:
