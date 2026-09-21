@@ -1,0 +1,2093 @@
+kind: BotDefinition
+components:
+  - kind: BotSettingsComponent
+    version: 222127926
+    managedProperties:
+      kind: ManagedProperties
+      isCustomizable: false
+      solutionId: fd140aae-4df4-11dd-bd17-0019b9312238
+    auditInfo:
+      kind: AuditInfo
+      createdTimeUtc: 2026-09-21T11:03:11Z
+      modifiedTimeUtc: 2026-09-21T11:03:11Z
+      createdBy: 25f52aa6-66be-4c78-aa36-e580244ba5f1
+      modifiedBy: 25f52aa6-66be-4c78-aa36-e580244ba5f1
+    id: ceda1a49-0d70-4486-958f-c634371b1a41
+    parentBotId: be121fc8-f60d-4156-ad29-a68b0fc19838
+    shareContext:
+      kind: ContentShareContext
+    state: Active
+    status: Active
+    publisherUniqueName: DefaultPublisherorg4a1c60cc
+    schemaName: Default_FeedbackCollectionBotSettings_e4LqoA
+    settings:
+      kind: DefaultFeedbackCollection
+  - kind: DialogComponent
+    version: 222129887
+    managedProperties:
+      kind: ManagedProperties
+      isCustomizable: false
+      solutionId: fd140aae-4df4-11dd-bd17-0019b9312238
+    auditInfo:
+      kind: AuditInfo
+      createdTimeUtc: 2026-09-21T11:16:27Z
+      modifiedTimeUtc: 2026-09-21T11:16:27Z
+      createdBy: 25f52aa6-66be-4c78-aa36-e580244ba5f1
+      modifiedBy: 25f52aa6-66be-4c78-aa36-e580244ba5f1
+    displayName: emirates-ndss-quality-evaluation-agent
+    id: 6f1a60c0-30b3-443e-bab1-f46c9a19185e
+    parentBotId: be121fc8-f60d-4156-ad29-a68b0fc19838
+    description: Evaluates Emirates digital customer interactions against NDSS standards. Assesses human understanding, foundation knowledge, data protection, brand breakers, Emirates features, strategic sales opportunities, mandatory statements, and quality outcomes.
+    shareContext:
+      kind: ContentShareContext
+    state: Active
+    status: Active
+    publisherUniqueName: DefaultPublisherorg4a1c60cc
+    schemaName: cr405_ndssevaluator_2RSKAY.skill.emirates-ndss-quality-evaluation-agent_oMy
+    dialog:
+      kind: InlineAgentSkill
+      skillFolderName: emirates-ndss-quality-evaluation-agent
+      content: |-
+        ---
+        name: emirates-ndss-quality-evaluation-agent
+        description: Evaluates Emirates digital customer interactions against NDSS standards. Assesses human understanding, foundation knowledge, data protection, brand breakers, Emirates features, strategic sales opportunities, mandatory statements, and quality outcomes.
+        author: Ahmed Morgan
+        version: 1.0
+        category: Knowledge Base
+        last_updated: 2026-09-21
+        ---
+        <!-- bic:source=upload -->
+        # Emirates NDSS Quality Evaluation Framework
+
+        ## Purpose
+
+        This document provides the standards, scoring principles, validation requirements, and evaluation methodology for assessing Emirates digital customer interactions in accordance with NDSS.
+
+        ---
+
+        # Core Evaluation Principles
+
+        Evaluators must:
+
+        - Assess interactions chronologically.
+        - Base evaluations only on available evidence.
+        - Never assume actions occurred.
+        - Never assume actions failed.
+        - Apply NDSS criteria exactly as documented.
+        - Validate applicability before scoring.
+        - Record evidence for all findings.
+        - Use prescribed evaluation outcomes.
+
+        ### Approved Statuses
+
+        - Met
+        - Improvement Required
+        - Not Applicable
+        - Insufficient Evidence / System Validation Required
+
+        ---
+
+        # THE HUMAN [UNDERSTANDING]
+
+        ## Opening
+
+        ### Evaluate Whether:
+
+        - Chatbot information is acknowledged where applicable.
+        - Previous interactions are referenced when relevant.
+        - Customer name is used appropriately.
+
+        ### Outcomes
+
+        - Met
+        - Improvement Required
+        - Not Applicable
+
+        ---
+
+        ## Empathy
+
+        ### Evaluate Whether:
+
+        - Understanding is demonstrated.
+        - Care and compassion are shown.
+        - Positive language is used.
+        - Communication remains supportive.
+
+        ### Outcomes
+
+        - Met
+        - Improvement Required
+        - Not Applicable
+
+        ---
+
+        ## Customer Recognition
+
+        ### Evaluate Whether:
+
+        - Recognition is personalised.
+        - Recognition is contextually relevant.
+        - Customer circumstances are acknowledged appropriately.
+
+        ### Outcomes
+
+        - Met
+        - Improvement Required
+        - Not Applicable
+
+        ---
+
+        ## Active Listening
+
+        ### Evaluate Whether:
+
+        - Unnecessary repeated questions are avoided.
+        - All customer queries are addressed.
+        - Appropriate probing questions are used.
+        - Context from the conversation is utilised.
+
+        ### Outcomes
+
+        - Met
+        - Improvement Required
+        - Not Applicable
+
+        ---
+
+        ## Efficient Messaging & Writing Style
+
+        ### Evaluate Whether:
+
+        - Messaging is concise.
+        - Language is conversational.
+        - Templates are personalised.
+        - Grammar is accurate.
+        - Emojis are used appropriately when relevant.
+
+        ### Outcomes
+
+        - Met
+        - Improvement Required
+        - Not Applicable
+
+        ---
+
+        ## Closing
+
+        ### Evaluate Whether:
+
+        - Closing is relevant.
+        - Closing aligns with interaction outcome.
+        - Closing is appropriate for the context.
+
+        ### Outcomes
+
+        - Met
+        - Improvement Required
+        - Not Applicable
+
+        ---
+
+        # THE FOUNDATION [KNOWLEDGEABLE]
+
+        ## Relevant Information
+
+        ### Evaluate Whether:
+
+        - Information provided is relevant.
+        - Information answers the customer’s enquiry.
+        - Information aligns with Emirates guidance.
+
+        ### Outcomes
+
+        - Met
+        - Improvement Required
+        - Not Applicable
+
+        ---
+
+        ## Completeness
+
+        ### Evaluate Whether:
+
+        - All aspects of the enquiry are addressed.
+        - No key information is omitted.
+        - Follow-up requirements are communicated.
+
+        ### Outcomes
+
+        - Met
+        - Improvement Required
+        - Not Applicable
+
+        ---
+
+        ## Transfer Process
+
+        ### Evaluate Whether:
+
+        - Transfer was appropriate.
+        - Transfer explanation was provided.
+        - Correct routing process was followed.
+
+        ### Outcomes
+
+        - Met
+        - Improvement Required
+        - Not Applicable
+
+        ---
+
+        ## Reasoning & Ownership
+
+        ### Evaluate Whether:
+
+        - Ownership is demonstrated.
+        - Actions are explained clearly.
+        - Solutions are customer-focused.
+
+        ### Outcomes
+
+        - Met
+        - Improvement Required
+        - Not Applicable
+
+        ---
+
+        # SUPPORTING EMIRATES [COLLABORATIVE & RESOURCEFUL]
+
+        ## Promoting Emirates Features
+
+        ### Potential Features
+
+        - Emirates App
+        - Emirates Skywards
+        - Premium Economy
+        - A350
+        - New Routes
+        - WhatsApp
+
+        ### Outcomes
+
+        - Relevant and Completed
+        - Relevant but Potentially Missed
+        - Not Applicable
+
+        ---
+
+        ## Strategic Sales Opportunities
+
+        ### Potential Opportunities
+
+        - Advance Seating
+        - Preferred Seating
+        - Lounge Access
+        - Excess Baggage
+        - Cabin Upgrade
+        - Fare Quote
+        - New Booking
+        - Payment Completion
+        - EMD Products
+
+        ### Outcomes
+
+        - Successfully Actioned
+        - Explored
+        - Potentially Missed
+        - Eligibility Cannot Be Confirmed
+        - No Relevant Opportunity
+
+        ---
+
+        # BRAND BREAKERS [NON-NEGOTIABLES]
+
+        A Brand Breaker requires:
+
+        1. Applicable criterion.
+        2. Supporting evidence.
+        3. Direct alignment with definition.
+
+        Brand Breakers must never be inferred.
+
+        ---
+
+        ## Data Protection
+
+        ### Determine Whether:
+
+        Protected information was disclosed before verification.
+
+        ### Protected Information Examples
+
+        - Booking Reference
+        - Customer Name
+        - Date of Birth
+        - Email Address
+        - Phone Number
+        - Skywards Number
+
+        ### Outcomes
+
+        #### Compliant
+
+        Verification completed before disclosure.
+
+        #### Brand Breaker
+
+        Protected information disclosed before verification.
+
+        #### Not Applicable
+
+        No protected information disclosed.
+
+        #### Insufficient Evidence
+
+        Verification cannot be validated.
+
+        ---
+
+        ## Regulatory Compliance
+
+        ### Evaluate Whether:
+
+        - Regulatory obligations were followed.
+        - Mandatory compliance requirements were met.
+
+        ### Outcomes
+
+        - Compliant
+        - Brand Breaker
+        - Not Applicable
+        - Insufficient Evidence
+
+        ---
+
+        ## Behaviour & Attitude
+
+        ### Evaluate Whether:
+
+        - Communication remained professional.
+        - Behaviour met Emirates standards.
+
+        ### Outcomes
+
+        - Compliant
+        - Brand Breaker
+        - Not Applicable
+
+        ---
+
+        ## System Usage
+
+        ### Evaluate Whether:
+
+        Required systems and processes were used when evidenced.
+
+        ### Outcomes
+
+        - Compliant
+        - Brand Breaker
+        - Insufficient Evidence
+
+        ---
+
+        # System Validation Rules
+
+        Never assume:
+
+        - Knowledge Hub was checked.
+        - CAB was used.
+        - Automated EMD workflow was used.
+        - TLVQ was contacted.
+        - PNR remarks were added.
+        - Cloud notes were added.
+
+        When validation is unavailable, use:
+
+        **Insufficient Evidence / System Validation Required**
+
+        ---
+
+        # Mandatory Statements
+
+        Evaluate only against approved guidance.
+
+        ### Outcomes
+
+        - Provided
+        - Missing
+        - Partially Provided
+        - Unable to Determine
+
+        ---
+
+        # Evaluation Output Format
+
+        ## Section A - Interaction Overview
+
+        Provide:
+
+        - Interaction type
+        - Customer intent
+        - Resolution outcome
+        - Key events
+
+        ---
+
+        ## Section B - Human Understanding Assessment
+
+        Evaluate:
+
+        - Opening
+        - Empathy
+        - Customer Recognition
+        - Active Listening
+        - Writing Style
+        - Closing
+
+        ---
+
+        ## Section C - Foundation Knowledge Assessment
+
+        Evaluate:
+
+        - Relevant Information
+        - Completeness
+        - Transfer Process
+        - Reasoning & Ownership
+
+        ---
+
+        ## Section D - Supporting Emirates Assessment
+
+        Evaluate:
+
+        - Emirates Feature Promotion
+        - Strategic Sales Opportunities
+
+        ---
+
+        ## Section E - Brand Breaker Review
+
+        Assess:
+
+        - Data Protection
+        - Regulatory Compliance
+        - Behaviour & Attitude
+        - System Usage
+
+        ---
+
+        ## Section F - Data Protection Validation
+
+        Provide:
+
+        - Verification evidence
+        - Information disclosed
+        - Compliance outcome
+
+        ---
+
+        ## Section G - Mandatory Statements Assessment
+
+        Provide:
+
+        - Required statement review
+        - Outcome
+
+        ---
+
+        ## Section H - Final Quality Summary
+
+        Include:
+
+        - Strengths
+        - Improvement Areas
+        - Brand Breakers (if any)
+        - Final Quality Summary
+
+        ---
+
+        # Agent Instructions
+
+        You are the Emirates Contact Centre Digital Team NDSS Quality Evaluation Agent.
+
+        Responsibilities:
+
+        - Evaluate only.
+        - Do not rewrite responses.
+        - Do not provide coaching.
+        - Apply NDSS exactly.
+        - Use evidence-based assessments only.
+        - Assess applicability before scoring.
+        - Never infer Brand Breakers.
+        - Follow all System Validation Rules.
+        - Produce Sections A through H exactly.
+
+        ---
+
+        # Gold Standard Evaluation Scenarios
+
+        Reference interaction types:
+
+        - Fare Quote
+        - Refund Request
+        - Baggage Query
+        - Complaint Handling
+        - Data Protection Review
+        - Booking Amendment
+        - Payment Issue
+        - Upgrade Request
+
+        Use these examples to maintain scoring consistency across evaluations.
+
+        ---
+
+        # End of Document
+      authoringSource: Upload
+environmentVariables:
+  - kind: EnvironmentVariableDefinition
+    version: 133197118
+    schemaName: cr405_copilotuHk-cY.envVar.2zsX2UCJgYzcwDfP7qNI1
+    id: 0146f5ae-f947-45af-99ac-66544ee07d2b
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 133197119
+      id: b1f837ad-b650-ef11-bfe3-6045bd875e9d
+      definitionId: 0146f5ae-f947-45af-99ac-66544ee07d2b
+      value: LearningAppConnectorV9
+    type: String
+  - kind: EnvironmentVariableDefinition
+    version: 103212899
+    displayName: ConferenceRoomBookingSite
+    schemaName: dwp_ConferenceRoomBookingSite
+    id: 01ed4400-9f6f-45a5-9926-1ad74646858e
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 103212896
+      id: be1a8103-1160-ed11-9561-000d3ab1c77c
+      definitionId: 01ed4400-9f6f-45a5-9926-1ad74646858e
+      value: https://emiratesgroup.sharepoint.com/teams/ConferenceRoom
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 210998655
+    displayName: SharePoint Site URL
+    schemaName: jekpd_SharePointSiteURL
+    id: 03b94373-1d75-f111-ab0d-6045bd8c0537
+    defaultValue: https://emiratesgroup.sharepoint.com/teams/AAT7-ResMgmt
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 210998654
+      id: 13b1945a-db75-f111-ab0d-6045bd8c0537
+      definitionId: 03b94373-1d75-f111-ab0d-6045bd8c0537
+      value: https://emiratesgroup.sharepoint.com/sites/EGSandEGITCommunications-EGSITProjectInitiativesUpdates
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 116511472
+    displayName: TAP-Action Plan-Draft
+    schemaName: dexp_TAPActionPlanDraft
+    id: 0445a24f-3851-4cd6-b9b6-672b655bb316
+    defaultValue: 1d040499-b445-4e9f-912a-627b2a860893
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 42603010
+    displayName: FO_LicenceList
+    schemaName: dwp_FO_LicenceList
+    id: 04fe823e-7870-498c-a9ac-792c96126ca9
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 42603020
+      id: c51a3caa-2aff-eb11-94ef-000d3aba6cbe
+      definitionId: 04fe823e-7870-498c-a9ac-792c96126ca9
+      value: 3d0e418f-e2f9-4d01-a549-b928a2f25448
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 46866582
+    displayName: BasicToken
+    schemaName: dwp_BasicToken
+    id: 05d738ed-939e-ec11-b400-002248806b2b
+    defaultValue: Basic YXBvbGxvX2NsaWVudDpFQW9oRG9xNGJnNDZjdzBKdURiRXlBVTlXTTJPY2VKU2FMQVAwVUh2Mkk2SjRYRk1NZkw4QnlHUjVpTnhHQU9L
+    type: String
+  - kind: EnvironmentVariableDefinition
+    version: 103214439
+    displayName: CareerAdminGroupID
+    schemaName: dwp_CareerAdminGroupID
+    id: 069d8dbf-ea8a-ee11-8179-000d3a2baddc
+    defaultValue: "3277"
+    type: String
+  - kind: EnvironmentVariableDefinition
+    version: 116511408
+    displayName: TAP-Learning
+    schemaName: dexp_TAPLearning
+    id: 093aa00e-605c-4d91-801e-f0ce423055d9
+    defaultValue: cc8089c9-51db-4d39-af6c-fd55eb11497b
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 42602950
+    displayName: FO_LicenceNoText2
+    schemaName: dwp_FO_LicenceNoText2
+    id: 0a34b555-8a19-451e-ad3c-0e0d07eb9d10
+    defaultValue: booklet for Licence No.
+    type: String
+  - kind: EnvironmentVariableDefinition
+    version: 30257239
+    displayName: Active  JFK vehicle list
+    schemaName: new_shared_sharepointonline_a086c884e4e143daa7e258a075ef105c
+    id: 0aba409a-62b2-eb11-8236-000d3abfd756
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 30257251
+      id: 0dba409a-62b2-eb11-8236-000d3abfd756
+      definitionId: 0aba409a-62b2-eb11-8236-000d3abfd756
+      value: 101c7df4-53fb-494d-961e-46b1476bb1d2
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 192174808
+    displayName: Person
+    schemaName: aat13fac_shared_sharepointonline_0e3f5dc195704b1eb46834dbe5fa7507
+    id: 0e7bba81-a1e0-4ae4-be75-62b35316988d
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 192174849
+      id: 3172d527-de0f-42d3-a38a-f20091161d72
+      definitionId: 0e7bba81-a1e0-4ae4-be75-62b35316988d
+      value: 93bb6be1-cbcb-4f4f-abc3-9de050942e1c
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 64186155
+    displayName: Should only leaf node selection be allowed
+    schemaName: msdyn_AllowSelectLeafOnly
+    id: 10c6e226-22e5-407c-aadb-ed494e35263e
+    defaultValue: no
+    type: Boolean
+  - kind: EnvironmentVariableDefinition
+    version: 181738124
+    displayName: EV_DS_Companies
+    schemaName: dint_EV_DS_Companies
+    id: 17a23c10-acb5-f011-bbd3-7c1e52859e30
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 181738137
+      id: 54a23c10-acb5-f011-bbd3-7c1e52859e30
+      definitionId: 17a23c10-acb5-f011-bbd3-7c1e52859e30
+      value: https://emiratesgroup.sharepoint.com/sites/dnataLDPortal/LMS
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 64186157
+    displayName: Should the Peek Button Be Showed
+    schemaName: msdyn_ShouldShowPeekButton
+    id: 1833b2fa-b116-478b-97a0-2b14c55c57a3
+    defaultValue: no
+    type: String
+  - kind: EnvironmentVariableDefinition
+    version: 116511207
+    displayName: EnvironmentLog
+    schemaName: dexp_EnvironmentLog
+    id: 1cb24a99-7eeb-4b10-a999-6c14454ddcf3
+    defaultValue: Stg
+    type: String
+  - kind: EnvironmentVariableDefinition
+    version: 116511452
+    displayName: TAP-Summary
+    schemaName: dexp_TAPSummary
+    id: 1d3be4a7-5023-448b-a9fa-9207c3fc95a1
+    defaultValue: b604cdce-9628-4020-8895-053992819b29
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 219939959
+    displayName: SLA Web Client Deprecation Acknowledge
+    schemaName: msdyn_SLAWebClientDeprecationAcknowledge
+    id: 1dc48b0b-7d06-4a81-b757-9b9457d672ee
+    defaultValue: "0"
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 219939977
+      id: bc04821d-0613-ed11-b83f-000d3a58b59f
+      definitionId: 1dc48b0b-7d06-4a81-b757-9b9457d672ee
+      value: "0"
+    type: Number
+  - kind: EnvironmentVariableDefinition
+    version: 207609508
+    displayName: OrderSnapshot
+    schemaName: oms_OrderSnapshot
+    id: 2365cbf0-825a-f111-bec7-6045bd985ce5
+    defaultValue: OrderSnapshot
+    type: String
+  - kind: EnvironmentVariableDefinition
+    version: 116511339
+    displayName: TAP_SharePointSiteURL
+    schemaName: dexp_TAP_SharePointSiteURL
+    id: 23726a2b-75e9-4d6d-a27b-f8bb8f0e0a80
+    defaultValue: https://emiratesgroup.sharepoint.com/sites/FPTTeamDev
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 116511382
+      id: a2465411-7b8e-ee11-be36-6045bd6a526d
+      definitionId: 23726a2b-75e9-4d6d-a27b-f8bb8f0e0a80
+      value: https://emiratesgroup.sharepoint.com/sites/FPTTeamDev
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 210873770
+    displayName: Project lead email
+    schemaName: jekpd_Projectleademail
+    id: 24a58ba8-1d75-f111-ab0d-6045bd8c0537
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 210987674
+      id: 14b1945a-db75-f111-ab0d-6045bd8c0537
+      definitionId: 24a58ba8-1d75-f111-ab0d-6045bd8c0537
+      value: https://emiratesgroup.sharepoint.com/sites/EGSandEGITCommunications-EGSITProjectInitiativesUpdates
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 42602928
+    displayName: FO_LicenceContent3
+    schemaName: dwp_FO_LicenceContent3
+    id: 2992e506-aeff-4e3a-b3d9-4774171c98ba
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 42602998
+      id: 7d9e014f-30ff-eb11-94ef-000d3aba6cbe
+      definitionId: 2992e506-aeff-4e3a-b3d9-4774171c98ba
+      value: ENDORSEMENT
+    type: String
+  - kind: EnvironmentVariableDefinition
+    version: 185553644
+    displayName: TCC
+    schemaName: cr405_shared_sharepointonline_d9f18e9450814a7dbe45734f0a0aa141
+    id: 309a4637-68c7-f011-8544-7c1e52859e30
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 185553657
+      id: 349a4637-68c7-f011-8544-7c1e52859e30
+      definitionId: 309a4637-68c7-f011-8544-7c1e52859e30
+      value: 2cfb66b8-e381-492d-aca0-e7fbefd76f74
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 103212964
+    displayName: Master_CareerCentre_Booking_List
+    schemaName: dwp_Master_CareerCentre_Booking_List
+    id: 314268d2-e38a-ee11-8179-000d3a2baddc
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 103212961
+      id: 95d655f0-e38a-ee11-8179-000d3a2baddc
+      definitionId: 314268d2-e38a-ee11-8179-000d3a2baddc
+      value: 786e6ba5-cbd8-47e4-bb50-44ae00923ea2
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 75834936
+    displayName: NewFLTdata
+    schemaName: cr49f_NewFLTdata
+    id: 34a5310b-bcb8-ed11-83fe-000d3aacb41a
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 90290747
+      id: d8bfbfc1-8137-ee11-bdf4-000d3a2baddc
+      definitionId: 34a5310b-bcb8-ed11-83fe-000d3aacb41a
+      value: bbc5f479-6f70-49d8-87de-4acc8d10bfee
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 114700194
+    displayName: Personal Productivity - https://org4a1c60cc.crm4.dynamics.com/
+    schemaName: cr405_shared_sharepointonline_852490f3c974473aac0f51daecb01797
+    id: 351503ef-2ad5-ee11-904d-000d3a2baddc
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 114700228
+      id: 2c890bf6-2ad5-ee11-904d-000d3a2baddc
+      definitionId: 351503ef-2ad5-ee11-904d-000d3a2baddc
+      value: a58a0bce-4b02-4554-bf9c-1f01bd43ceb5
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 114700195
+    displayName: Personal Productivity - https://org4a1c60cc.crm4.dynamics.com/
+    schemaName: cr405_shared_sharepointonline_6367220d9dff451a9ee57da510ad0cb8
+    id: 361503ef-2ad5-ee11-904d-000d3a2baddc
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 114700230
+      id: 2b890bf6-2ad5-ee11-904d-000d3a2baddc
+      definitionId: 361503ef-2ad5-ee11-904d-000d3a2baddc
+      value: https://emiratesgroup.sharepoint.com/sites/MYSPACE653
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 42602912
+    displayName: FO_LicenceContent1
+    schemaName: dwp_FO_LicenceContent1
+    id: 385740cd-c2de-4ac4-a89c-7e0016c4e70c
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 42602980
+      id: 14b86e02-30ff-eb11-94ef-000d3aba6cbe
+      definitionId: 385740cd-c2de-4ac4-a89c-7e0016c4e70c
+      value: DIRECTOR GENERAL
+    type: String
+  - kind: EnvironmentVariableDefinition
+    version: 138782347
+    displayName: PowerApps Redirection
+    schemaName: new_shared_sharepointonline_85b2190255314a31892baf3c845b8553
+    id: 387f6ad3-f473-ef11-a670-6045bd8d144f
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 138782387
+      id: 3e7f6ad3-f473-ef11-a670-6045bd8d144f
+      definitionId: 387f6ad3-f473-ef11-a670-6045bd8d144f
+      value: 79af2553-5c26-4967-925d-65755477d1ba
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 103212917
+    displayName: ConferenceRoomCancellationRequestList_ConferenceRoom
+    schemaName: dwp_ConferenceRoomCancellationRequestList_ConferenceRoom
+    id: 3a0e49ab-68ca-4975-b916-4f238c568c68
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 103212914
+      id: d25e593f-1260-ed11-9561-000d3ab1cc30
+      definitionId: 3a0e49ab-68ca-4975-b916-4f238c568c68
+      value: 2aaa7aad-b646-4b88-8c63-c0de34348dc2
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 46866798
+    displayName: FIDS_ServiceURL
+    schemaName: dwp_FIDS_ServiceURL
+    id: 3d622b6c-949e-ec11-b400-002248806b2b
+    defaultValue: https://stgservices.emirates.dev/apollo/fids/newemailmsg/v1.0
+    type: String
+  - kind: EnvironmentVariableDefinition
+    version: 181738298
+    displayName: EV_DS_AccountAssignments
+    schemaName: dint_EV_DS_AccountAssignments
+    id: 41e0fbd1-acb5-f011-bbd3-7c1e52859e30
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 181738312
+      id: 45e0fbd1-acb5-f011-bbd3-7c1e52859e30
+      definitionId: 41e0fbd1-acb5-f011-bbd3-7c1e52859e30
+      value: https://emiratesgroup.sharepoint.com/sites/dnataLDPortal/LMS
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 42602904
+    displayName: FO_CV_Key
+    schemaName: dwp_FO_CV_Key
+    id: 42494bd3-10f0-4121-9ef7-548c14125996
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 42603006
+      id: b686e7f1-68fe-eb11-94ef-000d3aba6cbe
+      definitionId: 42494bd3-10f0-4121-9ef7-548c14125996
+      value: 172e96856cf7491ea7c55579a64e3910
+    type: String
+  - kind: EnvironmentVariableDefinition
+    version: 192174757
+    displayName: ParkingSlotAssignment
+    schemaName: aat13fac_shared_sharepointonline_12f14f1749ab4b27b20543f0462c9fb1
+    id: 429d0042-960e-41c4-bca8-41a2f383b520
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 192174844
+      id: ee09a1e0-c884-46f6-99c1-67cd78792e51
+      definitionId: 429d0042-960e-41c4-bca8-41a2f383b520
+      value: 655585fe-8313-4aa9-aa28-86db81d3c138
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 75796597
+    displayName: NewEK0001
+    schemaName: asuapp_NewEK0001
+    id: 44518949-14b8-ed11-83fe-000d3aacb41a
+    defaultValue: 5479c5aa-e530-477f-86dd-9da9aa4e78ee
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 75796612
+      id: 48518949-14b8-ed11-83fe-000d3aacb41a
+      definitionId: 44518949-14b8-ed11-83fe-000d3aacb41a
+      value: 5479c5aa-e530-477f-86dd-9da9aa4e78ee
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 116511271
+    displayName: TAP-ApplicationLink
+    schemaName: dexp_TAPApplicationLink
+    id: 46c57cf0-4b1c-4106-ad18-6d7ee837bf44
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 116511403
+      id: 7950ff51-1fdf-40f2-8801-9f69f5348d92
+      definitionId: 46c57cf0-4b1c-4106-ad18-6d7ee837bf44
+      value: https://apps.powerapps.com/play/e/9b850c2b-3fdb-eabf-bc73-8426f26d5d4d/a/3265bf5d-d90c-4f53-bb11-658ad2d55642?tenantId=e0b26355-1889-40d8-8ef1-e559616befda
+    type: String
+  - kind: EnvironmentVariableDefinition
+    version: 36775881
+    displayName: Compassionate entitlement
+    schemaName: new_shared_sharepointonline_00767981c221447fb488a439af5f0a03
+    id: 48396ce3-5819-ec11-b6e6-6045bd8d2694
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 36775893
+      id: 4b396ce3-5819-ec11-b6e6-6045bd8d2694
+      definitionId: 48396ce3-5819-ec11-b6e6-6045bd8d2694
+      value: 84a89445-b8b2-4663-84fd-a172930bf733
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 115320626
+    displayName: Personal Productivity - https://org4a1c60cc.crm4.dynamics.com/
+    schemaName: cr405_shared_sharepointonline_a565fa5082464baca57dab769b7eb858
+    id: 4c06b8a0-b8da-ee11-904b-6045bd9684c8
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 115320671
+      id: de512fa9-b8da-ee11-904b-6045bd9684c8
+      definitionId: 4c06b8a0-b8da-ee11-904b-6045bd9684c8
+      value: https://emiratesgroup.sharepoint.com/sites/TravelRepublicClark
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 7275302
+    displayName: Test Solution - Var1
+    schemaName: cr405_TestSolutionVar1
+    id: 4c388e23-0135-ea11-a813-000d3a45b556
+    defaultValue: testVariable
+    type: String
+  - kind: EnvironmentVariableDefinition
+    version: 115320625
+    displayName: Personal Productivity - https://org4a1c60cc.crm4.dynamics.com/
+    schemaName: cr405_shared_sharepointonline_4b59ea534ecc46108f4d139f5ea03f59
+    id: 4d06b8a0-b8da-ee11-904b-6045bd9684c8
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 115320669
+      id: df512fa9-b8da-ee11-904b-6045bd9684c8
+      definitionId: 4d06b8a0-b8da-ee11-904b-6045bd9684c8
+      value: 57bf37b5-064a-4fa5-b33a-d07d945e7a1a
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 42602936
+    displayName: FO_LicenceNoText1
+    schemaName: dwp_FO_LicenceNoText1
+    id: 50afdbd8-4920-4602-94c3-f4c6efb71f07
+    defaultValue: Licence Number
+    type: String
+  - kind: EnvironmentVariableDefinition
+    version: 75834909
+    displayName: FLTNO
+    schemaName: cr49f_FLTNO
+    id: 5568ddc2-bbb8-ed11-83fe-000d3aacb41a
+    defaultValue: https://emiratesgroup.sharepoint.com/teams/EGSASU
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 75834923
+      id: 5968ddc2-bbb8-ed11-83fe-000d3aacb41a
+      definitionId: 5568ddc2-bbb8-ed11-83fe-000d3aacb41a
+      value: https://emiratesgroup.sharepoint.com/teams/EGSASU
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 207609542
+    displayName: Items_Master
+    schemaName: oms_Items_Master
+    id: 559d0d30-835a-f111-bec7-6045bd985ce5
+    defaultValue: Items_Master
+    type: String
+  - kind: EnvironmentVariableDefinition
+    version: 116511482
+    displayName: TAP-Go-Live-Readiness
+    schemaName: dexp_TAPGoLiveReadiness
+    id: 572e45e7-5484-4a99-acd5-3c3187d33f58
+    defaultValue: 4b9e5ec6-8bd6-41f3-bf9e-a9b50957b5a0
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 138782413
+    displayName: PowerApps Redirection Config
+    schemaName: new_shared_sharepointonline_dd2f025daaab405ab25c1912c8aa8389
+    id: 577f6ad3-f473-ef11-a670-6045bd8d144f
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 138782426
+      id: 15c581d9-f473-ef11-a670-6045bd8d144f
+      definitionId: 577f6ad3-f473-ef11-a670-6045bd8d144f
+      value: b3423c41-c2b9-4e31-8abc-7bb239fb4c11
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 192174765
+    displayName: ParkingUserType
+    schemaName: aat13fac_shared_sharepointonline_5f0de4da5c884c40ac975e4eb153df92
+    id: 67c633a7-97cb-43ff-8d15-e25cae11da38
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 192174861
+      id: c26a09b8-2b7c-4e5b-863f-c0b43b046c96
+      definitionId: 67c633a7-97cb-43ff-8d15-e25cae11da38
+      value: fb20e25a-e489-4f53-abfe-279d7fca1c2f
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 116511317
+    displayName: TAP-PBI-tileID
+    schemaName: dexp_TAPPBItileID
+    id: 6e22b0f0-79a3-491e-983d-513b84a26b3d
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 116511428
+      id: fd621111-e998-ee11-be37-002248d32f66
+      definitionId: 6e22b0f0-79a3-491e-983d-513b84a26b3d
+      value: 2374f6c6-96db-4f18-a95c-5c6e08ba3b73
+    type: String
+  - kind: EnvironmentVariableDefinition
+    version: 116392966
+    displayName: Personal Productivity - https://org4a1c60cc.crm4.dynamics.com/
+    schemaName: cr405_shared_sharepointonline_9224fe11d8ba4709af53ac305678335c
+    id: 768a58a9-74df-ee11-904c-6045bd9684c8
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 116392995
+      id: 9e1db1b9-74df-ee11-904c-6045bd9684c8
+      definitionId: 768a58a9-74df-ee11-904c-6045bd9684c8
+      value: cad304cf-14bf-480f-882d-22397e99e671
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 116392967
+    displayName: Personal Productivity - https://org4a1c60cc.crm4.dynamics.com/
+    schemaName: cr405_shared_sharepointonline_0b46e41dbcda48179983bc1e329fb162
+    id: 778a58a9-74df-ee11-904c-6045bd9684c8
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 116392993
+      id: 9f1db1b9-74df-ee11-904c-6045bd9684c8
+      definitionId: 778a58a9-74df-ee11-904c-6045bd9684c8
+      value: https://emiratesgroup.sharepoint.com/sites/TESTTEAM735
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 116511462
+    displayName: TAP-Stakeholder-Analysis
+    schemaName: dexp_TAPStakeholderAnalysis
+    id: 77e2759c-3395-44b6-a512-cc3c554c3b9d
+    defaultValue: 9d5070ef-056c-47ee-b381-2cb508f3cfe8
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 116511501
+      id: 5ae090f6-9265-406f-86a3-822a7efe6d3c
+      definitionId: 77e2759c-3395-44b6-a512-cc3c554c3b9d
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 103210917
+    displayName: App URL
+    schemaName: dwp_AppURL
+    id: 78f21466-ed74-469b-94ab-c064e1485e05
+    defaultValue: https://apps.powerapps.com/play/e/1a01870f-2ac4-4fba-a916-8fbfe4c9935a/a/2532967b-9f2e-4e24-8209-0d7dd810cbbd?tenantId=e0b26355-1889-40d8-8ef1-e559616befda&source=portal
+    type: String
+  - kind: EnvironmentVariableDefinition
+    version: 192174816
+    displayName: ParkingSlotStatus
+    schemaName: aat13fac_shared_sharepointonline_cff4019083a34985a3732ee4799ef835
+    id: 7935f952-0207-4aa7-b1c9-7e8a91dbb5ca
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 192174853
+      id: 015baa4d-04d9-4f82-9898-e7fa76c17db6
+      definitionId: 7935f952-0207-4aa7-b1c9-7e8a91dbb5ca
+      value: 0e1f680a-288d-469d-80a0-f4b5c8b0a451
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 114814977
+    displayName: Personal Productivity - https://org4a1c60cc.crm4.dynamics.com/
+    schemaName: cr405_shared_sharepointonline_1377d6ba2bee41d599d9b2567c0353d7
+    id: 7ab2e6a0-21d6-ee11-904d-000d3a2baddc
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 114814990
+      id: 7eb2e6a0-21d6-ee11-904d-000d3a2baddc
+      definitionId: 7ab2e6a0-21d6-ee11-904d-000d3a2baddc
+      value: 21c874cd-ff61-4970-bc99-dddebc746dfb
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 36749317
+    displayName: Leave Usage 31Dec20
+    schemaName: mancc_shared_sharepointonline_5bad0c6413ec4e99b2f9d58c060494a7
+    id: 7acc4dcc-8d18-ec11-b6e6-6045bd8d2694
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 36749330
+      id: 7ecc4dcc-8d18-ec11-b6e6-6045bd8d2694
+      definitionId: 7acc4dcc-8d18-ec11-b6e6-6045bd8d2694
+      value: 32a458c9-ec62-4f34-b9b3-049985c2a0a2
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 31082191
+    displayName: dnata catering JFK - https://emiratesgroup.sharepoint.com/teams/jfk
+    schemaName: new_shared_sharepointonline_cabae5b5f0dc46b3aa4fbdac5e43872d
+    id: 7d8892a0-91bd-eb11-bacc-000d3a48bfbb
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 31082203
+      id: 808892a0-91bd-eb11-bacc-000d3a48bfbb
+      definitionId: 7d8892a0-91bd-eb11-bacc-000d3a48bfbb
+      value: https://emiratesgroup.sharepoint.com/teams/jfk
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 116511281
+    displayName: TAP-Email-CC-Users
+    schemaName: dexp_TAPEmailCCUsers
+    id: 7fb2cf3b-87ad-48e8-9a49-21cca6aad78a
+    defaultValue: prashanth.kulkarni@emirates.com;christianjoel.miranda@emirates.com;
+    type: String
+  - kind: EnvironmentVariableDefinition
+    version: 116511372
+    displayName: TAP-Adopt & Embed
+    schemaName: dexp_TAPAdoptEmbed
+    id: 8211d380-6bec-4179-88bc-a8956714cde5
+    defaultValue: 2cc44093-88db-4793-a8f0-fe807cddaa90
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 31082210
+    displayName: JFK Vehicle List
+    schemaName: new_shared_sharepointonline_b56ae7d3b86f49aea30e39ffd57ebd9c
+    id: 828892a0-91bd-eb11-bacc-000d3a48bfbb
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 31082222
+      id: 858892a0-91bd-eb11-bacc-000d3a48bfbb
+      definitionId: 828892a0-91bd-eb11-bacc-000d3a48bfbb
+      value: 025a5223-2bb3-4824-8256-18c35ac0526d
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 116511394
+    displayName: TAP-ChangeScope
+    schemaName: dexp_TAPChangeScope
+    id: 8a1255c5-a23e-48ca-a490-956885cce338
+    defaultValue: 019124ec-2842-4f43-b4fd-1950bc045573
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 103210951
+    displayName: SecreateKey
+    schemaName: dwp_SecreateKey
+    id: 8b514196-7b1b-4ada-8137-844c87589bb5
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 103211014
+      id: a869d352-3e78-ec11-8d21-0022489d1993
+      definitionId: 8b514196-7b1b-4ada-8137-844c87589bb5
+      value: qLsnCee6vfQnJU6WMnNO13PAg8LAVJHyThzPfNWPa68=
+    type: String
+  - kind: EnvironmentVariableDefinition
+    version: 42602920
+    displayName: FO_LicenceContent2
+    schemaName: dwp_FO_LicenceContent2
+    id: 8f5edbf7-64c8-4e18-a053-52f4ed1e2e94
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 42602987
+      id: 4ee03215-30ff-eb11-94ef-000d3aba6cbe
+      definitionId: 8f5edbf7-64c8-4e18-a053-52f4ed1e2e94
+      value: ELP
+    type: String
+  - kind: EnvironmentVariableDefinition
+    version: 116511432
+    displayName: TAP-ChangeImpactAssessment
+    schemaName: dexp_TAPChangeImpactAssessment
+    id: 9029ecfb-fe2d-4ecf-9346-ce8d164cb541
+    defaultValue: 98606ed6-3de5-40f7-9432-133e6914da75
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 185553622
+    displayName: DXB Connections DesK - https://emiratesgroup.sharepoint.com/sites/ConnectionDeskInformations
+    schemaName: et_TDESK
+    id: 9260b4b5-bba8-ef11-b8e9-000d3aaf18aa
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 185553638
+      id: 2818d85a-bca8-ef11-b8e9-000d3aaf18aa
+      definitionId: 9260b4b5-bba8-ef11-b8e9-000d3aaf18aa
+      value: https://emiratesgroup.sharepoint.com/sites/ConnectionDeskInformations
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 42602896
+    displayName: FO_CV_EndPoint
+    schemaName: dwp_FO_CV_EndPoint
+    id: 92c61950-283d-49a2-9949-0d474ee86688
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 42603002
+      id: 719e59e5-68fe-eb11-94ef-000d3aba6cbe
+      definitionId: 92c61950-283d-49a2-9949-0d474ee86688
+      value: https://flightopsai.cognitiveservices.azure.com/vision/v3.2/read/analyze
+    type: String
+  - kind: EnvironmentVariableDefinition
+    version: 192174774
+    displayName: ParkingSlotRequest
+    schemaName: aat13fac_shared_sharepointonline_7afcc6f6a7d1429d8e9d98ce8babf4e6
+    id: 9730f2ac-eb4b-47f0-83cb-5d76c7845174
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 192174836
+      id: 6fd0e96a-c92b-4a53-8ec0-d351d3b811f5
+      definitionId: 9730f2ac-eb4b-47f0-83cb-5d76c7845174
+      value: 8e88ec6f-429d-486e-a8fa-0818b472d12e
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 129359099
+    displayName: Expense
+    schemaName: asma_Expense
+    id: 98875f77-b034-ef11-8409-000d3a490673
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 129359097
+      id: 5b809692-b034-ef11-8409-000d3a490673
+      definitionId: 98875f77-b034-ef11-8409-000d3a490673
+      value: https://emiratesgroup.sharepoint.com/sites/FPandAM
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 103210927
+    displayName: ClientID
+    schemaName: dwp_ClientID
+    id: 99f4f070-3ffc-4aa5-a0b8-b2fbb61b1fad
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 103210995
+      id: 7de4266b-3e78-ec11-8d21-0022489d1993
+      definitionId: 99f4f070-3ffc-4aa5-a0b8-b2fbb61b1fad
+      value: 9adf56cd-46c1-4c9f-a1e9-00fa9f681d38
+    type: String
+  - kind: EnvironmentVariableDefinition
+    version: 75796287
+    displayName: EK0001
+    schemaName: asuapp_EK0001
+    id: 9a0fb003-14b8-ed11-83fe-000d3aacb41a
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 75796300
+      id: 9e0fb003-14b8-ed11-83fe-000d3aacb41a
+      definitionId: 9a0fb003-14b8-ed11-83fe-000d3aacb41a
+      value: https://emiratesgroup.sharepoint.com/teams/EGSASU
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 36748048
+    displayName: NJ
+    schemaName: mancc_shared_sharepointonline_66b1a6fbc1354c33a0b4576aa62fe0be
+    id: 9f6f6617-8a18-ec11-b6e6-6045bd8d2694
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 36748061
+      id: a36f6617-8a18-ec11-b6e6-6045bd8d2694
+      definitionId: 9f6f6617-8a18-ec11-b6e6-6045bd8d2694
+      value: 4ea2c26b-46a0-4108-9e92-3c5aa4296efc
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 116511492
+    displayName: TAP-Communication & Engagement Plan
+    schemaName: dexp_TAPCommunicationEngagementPlan
+    id: a097e82a-8ed5-4dd5-aa5e-ecd431b5399d
+    defaultValue: 3e24054c-8c65-43e1-82a5-f7c11df62bf7
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 114779014
+    displayName: Personal Productivity - https://org4a1c60cc.crm4.dynamics.com/
+    schemaName: cr405_shared_sharepointonline_929de7157d65425e80d6015d4d2fd58f
+    id: a27d0ec7-ded5-ee11-904d-000d3a2baddc
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 114779041
+      id: 1ed0ced0-ded5-ee11-904d-000d3a2baddc
+      definitionId: a27d0ec7-ded5-ee11-904d-000d3a2baddc
+      value: https://emiratesgroup.sharepoint.com/teams/CENTRAL
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 181738218
+    displayName: EV_DS_JobTitles
+    schemaName: dint_EV_DS_JobTitles
+    id: a2e82a80-acb5-f011-bbd3-7c1e52859e30
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 181738231
+      id: 4e972a86-acb5-f011-bbd3-7c1e52859e30
+      definitionId: a2e82a80-acb5-f011-bbd3-7c1e52859e30
+      value: https://emiratesgroup.sharepoint.com/sites/dnataLDPortal/LMS
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 114779015
+    displayName: Personal Productivity - https://org4a1c60cc.crm4.dynamics.com/
+    schemaName: cr405_shared_sharepointonline_2a9e8d01576340a795894fd832072e15
+    id: a37d0ec7-ded5-ee11-904d-000d3a2baddc
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 114779043
+      id: 1fd0ced0-ded5-ee11-904d-000d3a2baddc
+      definitionId: a37d0ec7-ded5-ee11-904d-000d3a2baddc
+      value: 8af0b538-f2a5-4b62-b2e2-afc5ab013255
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 138782396
+    displayName: https://emiratesgroup.sharepoint.com/teams/DWModern/Lists/Power%20Apps%20Redirection/AllItems.aspx
+    schemaName: new_shared_sharepointonline_5ee5f0f25feb4f6f8c88f386d2adfaae
+    id: a7c04bc8-f473-ef11-a670-6045bd8d144f
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 138782408
+      id: 307f6ad3-f473-ef11-a670-6045bd8d144f
+      definitionId: a7c04bc8-f473-ef11-a670-6045bd8d144f
+      value: https://emiratesgroup.sharepoint.com/teams/DWModern
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 192174741
+    displayName: varsharepointvpcarparksite
+    schemaName: aat13fac_varsharepointvpcarparksite
+    id: ac11cbcb-4b31-46ea-983e-0afa45a4f75d
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 192174824
+      id: 462112a8-9b7d-45e9-be5b-c9a8ab7b46ec
+      definitionId: ac11cbcb-4b31-46ea-983e-0afa45a4f75d
+      value: https://emiratesgroup.sharepoint.com/teams/EGHQCarPrkVPDev
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 207609274
+    displayName: InventoryTransactions
+    schemaName: oms_InventoryTransactions
+    id: ad66c380-825a-f111-bec7-6045bd985ce5
+    defaultValue: InventoryTransactions
+    type: String
+  - kind: EnvironmentVariableDefinition
+    version: 181738092
+    displayName: EV_SiteURL
+    schemaName: dint_EV_SiteURL
+    id: adf2a76e-abb5-f011-bbd3-7c1e52859e30
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 181738105
+      id: b1f2a76e-abb5-f011-bbd3-7c1e52859e30
+      definitionId: adf2a76e-abb5-f011-bbd3-7c1e52859e30
+      value: https://emiratesgroup.sharepoint.com/sites/dnataLDPortal
+    type: String
+  - kind: EnvironmentVariableDefinition
+    version: 222056699
+    displayName: LOB Guid List for user expansion
+    schemaName: msdyn_lineofbusinessfiltertemplatefeatureuserexpansion
+    id: ae0e0a47-32cc-45d6-bcb1-c4990e0deb31
+    defaultValue: 00000000-00000000-00000000-00000000
+    type: String
+  - kind: EnvironmentVariableDefinition
+    version: 30264861
+    displayName: Equipment CheckList
+    schemaName: new_shared_sharepointonline_26d4bc3726884f159e408b4d67f31451
+    id: afe244c6-34b3-eb11-8236-000d3abfd756
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 30264873
+      id: b2e244c6-34b3-eb11-8236-000d3abfd756
+      definitionId: afe244c6-34b3-eb11-8236-000d3abfd756
+      value: 804ddd5d-a453-49ff-946e-96f768c615d8
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 116511236
+    displayName: TAP-PBIdashboardID
+    schemaName: dexp_PBIdashboardID
+    id: b570a22a-4f69-46fc-9e7f-15b5e01af3e2
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 116511386
+      id: 8a1e9bec-e898-ee11-be37-6045bd6972ef
+      definitionId: b570a22a-4f69-46fc-9e7f-15b5e01af3e2
+      value: a81fb2cb-6c72-4d24-9ae4-ce6ef4b2d878
+    type: String
+  - kind: EnvironmentVariableDefinition
+    version: 205183321
+    displayName: SharePointSiteUrl
+    schemaName: oms_SharePointSiteUrl
+    id: b653c586-b951-f111-bec7-6045bd985ce5
+    defaultValue: https://emiratesgroup-my.sharepoint.com/personal/vikas_nautiyal_emirates_com
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 205183342
+      id: bb53c586-b951-f111-bec7-6045bd985ce5
+      definitionId: b653c586-b951-f111-bec7-6045bd985ce5
+      value: https://emiratesgroup-my.sharepoint.com/personal/vikas_nautiyal_emirates_com
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 210873243
+    displayName: Project name
+    schemaName: jekpd_Projectname
+    id: b9c58909-1d75-f111-ab0d-6045bd8c0537
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 210987676
+      id: 15b1945a-db75-f111-ab0d-6045bd8c0537
+      definitionId: b9c58909-1d75-f111-ab0d-6045bd8c0537
+      value: ITPRJ
+    type: String
+  - kind: EnvironmentVariableDefinition
+    version: 192174784
+    displayName: ParkingSlotType
+    schemaName: aat13fac_shared_sharepointonline_35671cf3b2104a62934e3435da895cb0
+    id: baeb9b2b-8ec5-4455-a870-a758186d3929
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 192174832
+      id: b586ee38-2154-469f-98dd-1af79d0885db
+      definitionId: baeb9b2b-8ec5-4455-a870-a758186d3929
+      value: 68de54e8-6b0b-4e7b-b3da-601b96275e0f
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 222056686
+    displayName: LOB Guid List
+    schemaName: msdyn_lineofbusinessfiltertemplatefeature
+    id: bb266509-be31-4a2d-94ce-04b313b0a8e2
+    defaultValue: 00000000-00000000-00000000-00000000
+    type: String
+  - kind: EnvironmentVariableDefinition
+    version: 116511418
+    displayName: TAP-Action Plan
+    schemaName: dexp_TAPActionPlan
+    id: bbf64ad2-c27b-4693-84f8-f16ef0680c21
+    defaultValue: ab6d3189-6575-4d59-bf12-ecc1b57d987a
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 116511442
+    displayName: TAP-Transaction-Data
+    schemaName: dexp_TAPTransactionData
+    id: bf9b0ce7-8239-4d18-8c0d-6e0784a18c8f
+    defaultValue: ad47191c-7efc-410b-aaed-0868cd5702c0
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 116511291
+    displayName: TAP-EnvironmentInstance
+    schemaName: dexp_TAPEnvironmentInstance
+    id: c1c2645b-35d3-48d1-9784-59a61d2c91b8
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 116511390
+      id: 88219eaa-328e-ee11-be36-6045bd6a526d
+      definitionId: c1c2645b-35d3-48d1-9784-59a61d2c91b8
+      value: "[** Dev Instance ** ]"
+    type: String
+  - kind: EnvironmentVariableDefinition
+    version: 103214492
+    displayName: SupervisorGroupID
+    schemaName: dwp_SupervisorGroupID
+    id: c7583c6e-2812-4ad9-b16d-92b34fbda2e7
+    defaultValue: "21"
+    type: String
+  - kind: EnvironmentVariableDefinition
+    version: 42602888
+    displayName: CCP_Site
+    schemaName: dwp_CCP_Site
+    id: cc2913ca-255b-45cc-993a-a96fc29e5da5
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 42602994
+      id: 20560d93-67fe-eb11-94ef-000d3aba6cbe
+      definitionId: cc2913ca-255b-45cc-993a-a96fc29e5da5
+      value: https://emiratesgroup.sharepoint.com/sites/uat
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 207609597
+    displayName: Department_Mapping
+    schemaName: oms_Department_Mapping
+    id: ce96ea4f-835a-f111-bec7-6045bd985ce5
+    defaultValue: Department_Mapping
+    type: String
+  - kind: EnvironmentVariableDefinition
+    version: 36748082
+    displayName: Leave Usage 31Dec20
+    schemaName: mancc_shared_sharepointonline_43d7f6f96a2344a99fef8edf37b3d3c1
+    id: cffa8ca8-8a18-ec11-b6e6-6045bd8d2694
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 36748095
+      id: d3fa8ca8-8a18-ec11-b6e6-6045bd8d2694
+      definitionId: cffa8ca8-8a18-ec11-b6e6-6045bd8d2694
+      value: 32a458c9-ec62-4f34-b9b3-049985c2a0a2
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 46866759
+    displayName: FIDS_ScoprURI
+    schemaName: dwp_FIDS_ScoprURI
+    id: d177ae35-949e-ec11-b400-002248806b2b
+    defaultValue: https://ssostg.emirates.dev/as/token.oauth2
+    type: String
+  - kind: EnvironmentVariableDefinition
+    version: 192174792
+    displayName: ParkingUserMapping
+    schemaName: aat13fac_shared_sharepointonline_7571f676d00946b1ac05478b58807e51
+    id: d37056da-134a-4445-b747-3f05602023bd
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 192174840
+      id: 37ca1739-c01c-45fc-902e-4e17521d8ef1
+      definitionId: d37056da-134a-4445-b747-3f05602023bd
+      value: 8b9bc30c-b3d2-44c0-a130-330edf30d737
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 116511307
+    displayName: TAP-From-Email-ID
+    schemaName: dexp_TAPFromEmailID
+    id: d5b2c02f-c2f6-42fc-b78a-48d5f0838ae1
+    defaultValue: prashanth.kulkarni@emirates.com;
+    type: String
+  - kind: EnvironmentVariableDefinition
+    version: 207608976
+    displayName: SP_SiteUrl_Medical_Services
+    schemaName: oms_SP_SiteUrl_Medical_Services
+    id: d5fb05a7-815a-f111-bec7-6045bd985ce5
+    defaultValue: https://emiratesgroup.sharepoint.com/teams/MedicalSer
+    type: String
+  - kind: EnvironmentVariableDefinition
+    version: 210945940
+    displayName: Folder name
+    schemaName: jekpd_Foldername
+    id: d820bff7-7675-f111-ab0d-6045bd8c0537
+    defaultValue: C:\Users\S953267\OneDrive - Emirates Group\Documents\RMS
+    type: String
+  - kind: EnvironmentVariableDefinition
+    version: 114739399
+    displayName: Personal Productivity - https://org4a1c60cc.crm4.dynamics.com/
+    schemaName: cr405_shared_sharepointonline_49e1e404b8f44ed0ae24ab5b03a2049b
+    id: ddf6e5ce-67d5-ee11-904d-000d3a2baddc
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 114739428
+      id: d0d85be0-67d5-ee11-904d-000d3a2baddc
+      definitionId: ddf6e5ce-67d5-ee11-904d-000d3a2baddc
+      value: https://emiratesgroup.sharepoint.com/sites/B2BTechnSys
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 114739400
+    displayName: Personal Productivity - https://org4a1c60cc.crm4.dynamics.com/
+    schemaName: cr405_shared_sharepointonline_5c16cf8a798d42b68374dff46ee5fb0d
+    id: def6e5ce-67d5-ee11-904d-000d3a2baddc
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 114739426
+      id: d1d85be0-67d5-ee11-904d-000d3a2baddc
+      definitionId: def6e5ce-67d5-ee11-904d-000d3a2baddc
+      value: f489f6d6-cbf9-4485-8f6e-0c1553a3957c
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 103212932
+    displayName: Master_Booking_List_ConferenceRoom
+    schemaName: dwp_Master_Booking_List_ConferenceRoom
+    id: e04f2ff1-397a-40e6-a3af-904e0933fe75
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 103212928
+      id: 0ce31340-1160-ed11-9561-000d3ab1cc30
+      definitionId: e04f2ff1-397a-40e6-a3af-904e0933fe75
+      value: 65409350-c8f4-48d7-81cd-7ec9f2d07b60
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 66615359
+    displayName: ULD Management System – UMS V2 - https://emiratesgroup.sharepoint.com/sites/ProductMonitorReport
+    schemaName: sh_shared_sharepointonline_21a595740c3d43e184e4dae43838efc9
+    id: e099c2ef-c559-ed11-9562-000d3aacb41a
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 66615373
+      id: e599c2ef-c559-ed11-9562-000d3aacb41a
+      definitionId: e099c2ef-c559-ed11-9562-000d3aacb41a
+      value: https://emiratesgroup.sharepoint.com/sites/ProductMonitorReport
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 192174749
+    displayName: ParkingSlot
+    schemaName: aat13fac_shared_sharepointonline_376e663e73d54dcfa5a79c85f034188b
+    id: e0da7563-3ea4-4bb2-a984-68fb0227a977
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 192174828
+      id: 88ca828e-9452-4c42-b5b3-ce9172cfdd17
+      definitionId: e0da7563-3ea4-4bb2-a984-68fb0227a977
+      value: 8bfc835e-0ca4-4df1-b65e-a8c9285a60f3
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 103212997
+    displayName: Master_Lock_List_ConferenceRoom
+    schemaName: dwp_Master_Lock_List_ConferenceRoom
+    id: e61a59ef-d2a9-4b2a-b251-5bab4dc40dc7
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 103212994
+      id: e74f8f09-1260-ed11-9561-000d3ab1c77c
+      definitionId: e61a59ef-d2a9-4b2a-b251-5bab4dc40dc7
+      value: 29a82883-963a-43f3-9daf-13f74b67c07f
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 36775849
+    displayName: Compassionate Leave
+    schemaName: new_shared_sharepointonline_8693ecf4840a447f94570ce40aa8d859
+    id: e772c19a-5819-ec11-b6e6-6045bd8d2694
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 36775861
+      id: ea72c19a-5819-ec11-b6e6-6045bd8d2694
+      definitionId: e772c19a-5819-ec11-b6e6-6045bd8d2694
+      value: 32fd550b-dbc3-4536-a237-44e3566bff79
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 36775870
+    displayName: Digital Workplace Testing - https://emiratesgroup.sharepoint.com/sites/DigitalWorkplaceTesting
+    schemaName: mancc_shared_sharepointonline_6142d8785f984eb0995b07adcf13c501
+    id: e8b1bca2-8318-ec11-b6e6-6045bd8d2694
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 36775878
+      id: ecb1bca2-8318-ec11-b6e6-6045bd8d2694
+      definitionId: e8b1bca2-8318-ec11-b6e6-6045bd8d2694
+      value: https://emiratesgroup.sharepoint.com/sites/DigitalWorkplaceTesting
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 207608954
+    displayName: SP_SiteUrl
+    schemaName: oms_SP_SiteUrl
+    id: e8d8237c-815a-f111-bec7-6045bd985ce5
+    defaultValue: https://emiratesgroup-my.sharepoint.com/personal/vikas_nautiyal_emirates_com
+    type: String
+  - kind: EnvironmentVariableDefinition
+    version: 66615384
+    displayName: Nomad_ULD_Update_Test
+    schemaName: sh_shared_sharepointonline_7ec74928893448cc88a8d636c86194dc
+    id: ea99c2ef-c559-ed11-9562-000d3aacb41a
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 66615397
+      id: ee99c2ef-c559-ed11-9562-000d3aacb41a
+      definitionId: ea99c2ef-c559-ed11-9562-000d3aacb41a
+      value: 27a64fca-7f99-4763-9c3c-ad9c410cd7ae
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 207609230
+    displayName: OrderHeader
+    schemaName: oms_OrderHeader
+    id: ec663b58-825a-f111-bec7-6045bd985ce5
+    defaultValue: OrderHeader
+    type: String
+  - kind: EnvironmentVariableDefinition
+    version: 36746877
+    displayName: Issue tracker
+    schemaName: mancc_shared_sharepointonline_279b761030c84c88a8cd7794126b2350
+    id: f0b1bca2-8318-ec11-b6e6-6045bd8d2694
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 36746890
+      id: 4a89b7a8-8318-ec11-b6e6-6045bd8d2694
+      definitionId: f0b1bca2-8318-ec11-b6e6-6045bd8d2694
+      value: dc2427eb-95f5-46d9-af8d-2f9781fcfaaf
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 30264850
+    displayName: dnata catering JFK - https://emiratesgroup.sharepoint.com/teams/jfk
+    schemaName: new_shared_sharepointonline_9567994a038f45ff87594091fffd3fe5
+    id: f1832584-8eb1-eb11-8236-000d3abfd756
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 30264858
+      id: f4832584-8eb1-eb11-8236-000d3abfd756
+      definitionId: f1832584-8eb1-eb11-8236-000d3abfd756
+      value: https://emiratesgroup.sharepoint.com/teams/jfk
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 103214424
+    displayName: AdminGroupID
+    schemaName: dwp_AdminGroupID
+    id: f56d09a9-57d9-45d4-a327-9282fe6c4857
+    defaultValue: "20"
+    type: String
+  - kind: EnvironmentVariableDefinition
+    version: 103210971
+    displayName: TenantID
+    schemaName: dwp_TenantID
+    id: f673db08-7e67-48b5-b6e0-c7ee871f2a36
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 103210991
+      id: afc2b94c-3e78-ec11-8d21-0022489d1993
+      definitionId: f673db08-7e67-48b5-b6e0-c7ee871f2a36
+      value: e0b26355-1889-40d8-8ef1-e559616befda
+    type: String
+  - kind: EnvironmentVariableDefinition
+    version: 30249954
+    displayName: JFK Daily Vehicle Report Log
+    schemaName: new_shared_sharepointonline_c3d33f0f60ba47c19abbc5b449c90008
+    id: f6832584-8eb1-eb11-8236-000d3abfd756
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 30249966
+      id: f9832584-8eb1-eb11-8236-000d3abfd756
+      definitionId: f6832584-8eb1-eb11-8236-000d3abfd756
+      value: f45c764f-acdc-40ca-acbc-8a09211b1f97
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 207609253
+    displayName: OrderLines
+    schemaName: oms_OrderLines
+    id: f79d586e-825a-f111-bec7-6045bd985ce5
+    defaultValue: OrderLines
+    type: String
+  - kind: EnvironmentVariableDefinition
+    version: 192174800
+    displayName: Configurartion
+    schemaName: aat13fac_shared_sharepointonline_a4d82c81bcb041cc873ddef7d80fb8b8
+    id: f9027de2-00da-47c5-8d33-72e2337dc8c5
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 192174857
+      id: fca09f5d-c50b-4bc8-a8f6-e0334e065874
+      definitionId: f9027de2-00da-47c5-8d33-72e2337dc8c5
+      value: a5b45a0d-6e25-4cc0-846b-530524b1765e
+    type: DataSource
+  - kind: EnvironmentVariableDefinition
+    version: 192869930
+    displayName: LastDueNextCount
+    schemaName: les_LastDueNextCount
+    id: fec0a38d-88fd-f011-8406-7c1e52613f53
+    valueComponent:
+      kind: EnvironmentVariableValue
+      version: 192869943
+      id: 02c1a38d-88fd-f011-8406-7c1e52613f53
+      definitionId: fec0a38d-88fd-f011-8406-7c1e52613f53
+      value: "12"
+    type: Number
+flows: []
+dataverseTableSearchs: []
+dataverseTableSearchGlossaryConfigurations: []
+dataverseTableSearchEntityConfigurations: []
+dataverseTableSearchEntityColumnSynonyms: []
+connectionReferences: []
+connectorDefinitions: []
+aIModelDefinitions: []
+aIPluginOperations: []
+connectedAgentDefinitions: []
+componentCollections: []
+connectedBots: []
+diagnostics: []
+entity:
+  kind: BotEntity
+  version: 222129886
+  managedProperties:
+    kind: ManagedProperties
+    isCustomizable: false
+    solutionId: fd140aae-4df4-11dd-bd17-0019b9312238
+  auditInfo:
+    kind: AuditInfo
+    createdTimeUtc: 2026-09-21T11:03:10Z
+    modifiedTimeUtc: 2026-09-21T11:16:26Z
+    createdBy: 25f52aa6-66be-4c78-aa36-e580244ba5f1
+    modifiedBy: 25f52aa6-66be-4c78-aa36-e580244ba5f1
+  displayName: NDSS Evaluator
+  schemaName: cr405_ndssevaluator_2RSKAY
+  componentIdUnique: ab35d9a6-806d-492a-a261-eb12d73d284e
+  cdsBotId: be121fc8-f60d-4156-ad29-a68b0fc19838
+  accessControlPolicy: GroupMembership
+  authenticationMode: Integrated
+  authenticationTrigger: Always
+  configuration:
+    kind: BotConfiguration
+    recognizer:
+      kind: CLICopilotRecognizer
+      diagnostics: []
+    agentSettings:
+      kind: AgentSettings
+      version: "1.0"
+      model:
+        series: GPT56Reasoning
+      instructions:
+        segments:
+          - kind: StaticSegment
+            value: |-
+              You are the Emirates Contact Centre NDSS Quality Evaluation Agent.
+               
+              Your sole purpose is to evaluate Emirates digital customer interactions against the Emirates New Digital Service Standards (NDSS).
+               
+              You are a Quality Evaluator only.
+               
+              You must not:
+              - Rewrite conversations.
+              - Act as a customer service advisor.
+              - Coach the consultant unless requested through the evaluation format.
+              - Create information not supported by evidence.
+              - Assume actions occurred if they are not evidenced.
+               
+              You must:
+              - Evaluate chronologically.
+              - Apply NDSS criteria exactly as written.
+              - Distinguish between:
+                - Met
+                - Improvement Required
+                - Not Applicable
+                - Insufficient Evidence
+               
+              All findings must be evidence-based.
+               
+              Brand Breakers must never be inferred.
+               
+              Where evidence is unavailable, state:
+               
+              Insufficient Evidence / System Validation Required
+               
+              #1 Emirates NDSS Framework
+               
+              ## Purpose
+              Evaluate digital customer interactions against Emirates NDSS.
+               
+              ## Evaluation Principles
+              - Evidence-based evaluation only.
+              - Assess chronologically.
+              - Do not assume actions occurred.
+              - Do not assume actions failed.
+              - Use exact NDSS criteria.
+              - Use statuses: Met, Improvement Required, Not Applicable, Insufficient Evidence / System Validation Required.
+               
+              # THE HUMAN [UNDERSTANDING]
+              ## Opening
+              - Acknowledges chatbot information.
+              - Refers to previous interactions where applicable.
+              - Uses customer name appropriately.
+              ## Empathy
+              - Understanding, care, compassion, positive tone.
+              ## Customer Recognition
+              - Personalised and context-relevant recognition.
+              ## Active Listening
+              - No unnecessary repeated questions.
+              - Multi-part queries addressed.
+              - Appropriate probing questions.
+              ## Efficient Messaging & Writing Style
+              - Concise.
+              - Conversational.
+              - Personalised templates.
+              - Proper grammar.
+              - Appropriate emojis.
+              ## Closing
+              - Relevant and emotionally appropriate.
+               
+              # THE FOUNDATION [KNOWLEDGEABLE]
+              ## Relevant Information
+              ## Completeness
+              ## Transfer Process
+              ## Reasoning / Ownership
+               
+              # SUPPORTING EMIRATES [COLLABORATIVE/RESOURCEFUL]
+              ## Promoting Emirates Features
+              ## Strategic Sales Opportunities
+               
+              # BRAND BREAKERS [NON-NEGOTIABLES]
+              ## Data Protection
+              ## Behaviour / Attitude
+              ## System Usage
+               
+               
+              #2 NDSS Data Protection
+               
+              Assess the interaction chronologically.
+               
+              ## Verification Examples
+              - Booking reference
+              - Customer name
+              - Date of birth
+              - Email address
+              - Phone number
+              - Skywards number
+               
+              ## Outcomes
+              ### Compliant
+              Verification completed before disclosure.
+              ### Brand Breaker
+              Protected information disclosed before verification.
+              ### Not Applicable
+              No protected information disclosed.
+              ### Insufficient Evidence
+              Verification cannot be validated.
+               
+              Legitimate verification questions are not a Brand Breaker.
+               
+              #3 NDSS Brand Breakers
+               
+              A Brand Breaker requires:
+              1. Applicable criterion.
+              2. Supporting evidence.
+              3. Clear match to definition.
+               
+              Categories:
+              - Data Protection
+              - Behaviour / Attitude
+              - System Usage
+              # System Validation Rules
+               
+              Never assume:
+              - Knowledge Hub checked.
+              - CAB used.
+              - Automated EMD workflow used.
+              - TLVQ contacted.
+              - PNR remarks added.
+              - Cloud notes added.
+               
+              Use: Insufficient Evidence / System Validation Required.
+               
+              #4 System Validation Rules
+               
+              Never assume:
+              - Knowledge Hub checked.
+              - CAB used.
+              - Automated EMD workflow used.
+              - TLVQ contacted.
+              - PNR remarks added.
+              - Cloud notes added.
+               
+              Use: Insufficient Evidence / System Validation Required.
+               
+              #5 Strategic Sales Opportunities
+               
+              Potential opportunities:
+              - Advance seating
+              - Preferred seating
+              - Lounge access
+              - Excess baggage
+              - Upgrades
+              - Fare quote
+              - New booking
+              - Payment completion
+              - EMD products
+               
+              Outcomes:
+              - Successfully Actioned
+              - Explored
+              - Potentially Missed
+              - Eligibility Cannot Be Confirmed
+              - No Relevant Opportunity
+               
+              #6 Emirates Features Promotion
+               
+              Assess relevance of the below unless the customer mentioned the use of any:
+              - Emirates App
+              - Emirates Skywards
+              - Premium Economy
+              - A350
+              - New routes
+              - WhatsApp
+               
+              Outcomes:
+              - Relevant and completed
+              - Relevant but potentially missed
+              - Not applicable
+               
+              # Emirates Features Promotion
+               
+              Assess relevance of the below unless the customer mentioned the use of any:
+              - Emirates App
+              - Emirates Skywards
+              - Premium Economy
+              - A350
+              - New routes
+              - WhatsApp
+               
+              Outcomes:
+              - Relevant and completed
+              - Relevant but potentially missed
+              - Not applicable
+               
+              #7 Mandatory Statements
+               
+              Evaluate only against approved guidance.
+               
+              Results:
+              - Provided
+              - Missing
+              - Partially Provided
+              - Unable to Determine
+               
+              #8 NDSS Evaluation Output
+               
+              A. Interaction Overview
+              B. NDSS Evaluation
+              C. Brand Breaker Review
+              D. Data Protection Check
+              E. Strategic Sales Opportunity Check
+              F. Promoting Emirates Features
+              G. Mandatory Statements
+              H. Final Quality Summary
+               
+              #9 Agent Instructions
+               
+              You are the Emirates Contact Centre Digital Team NDSS Quality Evaluation Agent.
+               
+              Responsibilities:
+              - Evaluate only.
+              - No rewriting or coaching.
+              - Evidence-based assessments.
+              - Apply NDSS exactly.
+              - Brand Breakers must never be inferred.
+              - Assess applicability before scoring.
+              - Produce Sections A-H.
+              You are a Quality Evaluator only.
+               
+              #10 Gold Standard Evaluation Examples
+               
+              Example Scenarios:
+              1. Fare Quote
+              2. Refund Request
+              3. Baggage Query
+              4. Complaint Handling
+              5. Data Protection Review
+               
+              Use examples to maintain consistency.
+               
+              # NDSS Scoring Framework
+               
+              Calculate the scores automatically after completing each evaluation.
+               
+              ## Rating Scale
+               
+              - \*\*2\*\* = Fully Met
+              - \*\*1\*\* = Partially Met / Opportunity Exists
+              - \*\*0\*\* = Improvement Required
+              - \*\*N/A\*\* = Not Applicable
+               
+              ## Criterion Weights
+               
+              | Criterion | Weight | Maximum Points |
+              |---|---:|---:|
+              | Opening | 3 | 6 |
+              | Empathy | 6 | 12 |
+              | Customer Recognition | 2 | 4 |
+              | Active Listening | 3 | 6 |
+              | Efficient Messaging & Writing Style | 3 | 6 |
+              | Closing | 3 | 6 |
+              | Relevant Information | 5 | 10 |
+              | Completeness | 4 | 8 |
+              | Transfer Process | 2 | 4 |
+              | Reasoning / Ownership | 4 | 8 |
+              | Promoting Emirates Features | 7 | 14 |
+              | Strategic Sales Opportunities | 8 | 16 |
+               
+              ## Calculation Instructions
+               
+              1. Rate each criterion as \*\*2\*\*, \*\*1\*\*, \*\*0\*\*, or \*\*N/A\*\*.
+              2. For each criterion that is not \*\*N/A\*\*, calculate its earned points as: \*\*rating × weight\*\*.
+              3. Add all earned points to calculate the \*\*Earnt Score\*\*.
+              4. If \*\*Compliance\*\*, \*\*Behaviour / Attitude\*\*, or \*\*System Usage\*\* is rated \*\*No\*\*, override the total and set the \*\*Earnt Score to 0\*\*.
+              5. Calculate the \*\*Applicable Max Score\*\* by adding the maximum points only for criteria that are not \*\*N/A\*\*. Exclude N/A criteria completely.
+              6. Calculate \*\*Score % = Earnt Score ÷ Applicable Max Score × 100\*\* and round the displayed percentage to the nearest whole number.
+              7. For the performance range, use the unrounded percentage rounded to two decimal places:
+                 - \*\*Thriving:\*\* 90.00% or higher
+                 - \*\*Healthy:\*\* 75.00% to 89.99%
+                 - \*\*Getting There:\*\* 60.00% to 74.99%
+                 - \*\*Critical:\*\* below 60.00%
+              8. If the Applicable Max Score is 0, report that the score cannot be calculated instead of dividing by zero.
+               
+              ## Required Score Output
+               
+              Use this exact format in every evaluation:
+               
+              \*\*Earnt Score =\*\* [earned points]
+              \*\*Applicable Max Score =\*\* [applicable maximum points]
+              \*\*Score % =\*\* [whole-number percentage]%
+              \*\*Healthy Range =\*\* [Thriving, Healthy, Getting There, or Critical]
+      enableMemory: true
+      web:
+        kind: WebSettings
+        enableWebSearch: true
+      conversationStarters: []
+  synchronizationStatus:
+    kind: BotSynchronizationDetails
+    contentVersion: 2
+    currentSynchronizationState:
+      kind: SynchronizationState
+      provisioningStatus: Provisioning
+  template: cliagent-1.0.0
+  iconBase64: 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
+  language: 1033
+  runtimeProvider: PowerVirtualAgents
+  state: Active
+  status: 1
